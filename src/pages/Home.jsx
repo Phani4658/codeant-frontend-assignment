@@ -54,22 +54,22 @@ export default function Home({ username }) {
 
   return (
     <div className="bg-white rounded-md max-h-full p-4 home-shadow border border-[#E9EAEB]">
-      <div className="lg:flex items-center justify-between">
+      <div className="md:flex items-center justify-between gap-2">
         <div>
           <h1 className="text-2xl font-semibold">Repositories</h1>
           <p className="mt-2">
             {filteredRepos ? filteredRepos.length : 0} Total Repositories
           </p>
         </div>
-        <div className="space-x-4 flex items mt-2 lg:mt-0">
+        <div className="space-x-4 flex items mt-2 md:mt-0">
           <button
-            className="home-btn flex gap-3 items-center"
+            className="text-[11px] md:text-[12px] lg:text-base home-btn flex gap-3 items-center"
             onClick={handleRefresh}
           >
             <TfiReload />
             Refresh All
           </button>
-          <button className="home-btn flex gap-2 items-center bg-[#1570EF] text-white">
+          <button className="text-[11px] md:text-[12px] lg:text-base home-btn flex gap-2 items-center bg-[#1570EF] text-white">
             <IoAdd />
             Add Repository
           </button>
@@ -88,7 +88,7 @@ export default function Home({ username }) {
         {loading ? (
           <p>Loading repositories...</p>
         ) : (
-          <ul className="overflow-scroll lg:h-[calc(100vh-12rem)]">
+          <ul className="overflow-scroll md:h-[calc(100vh-12rem)]">
             {filteredRepos &&
               filteredRepos.map((repo) => (
                 <li
@@ -97,22 +97,22 @@ export default function Home({ username }) {
                 >
                   <Link to={repo.html_url} target="_blank">
                     <div className="flex gap-3 items-center mb-2">
-                      <h2 className="font-semibold text-sm lg:text-base">
+                      <h2 className="font-semibold text-sm md:text-base">
                         {repo.name}
                       </h2>
                       <span className="p-0.5 px-3 text-sm border border-[#B2DDFF] text-[#B2DDFF] bg-[#eff8ff] rounded-full">
                         {repo.visibility}
                       </span>
                     </div>
-                    <div className="flex lg:justify-between w-full gap-3 lg:max-w-[400px]">
-                      <p className="text-[11px] lg:text-base flex items-center gap-2 lg:gap-3">
+                    <div className="flex md:justify-between w-full gap-3 md:max-w-[400px]">
+                      <p className="text-[9px] md:text-base flex items-center gap-1.5 md:gap-3">
                         {repo.language || "React"}{" "}
-                        <div className="w-2 lg:w-3 h-2 lg:h-3 rounded-full bg-[#1570EF]"></div>
+                        <div className="w-2 md:w-3 h-2 md:h-3 rounded-full bg-[#1570EF]"></div>
                       </p>
-                      <p className="text-[11px] lg:text-base flex items-center gap-1 lg:gap-3">
+                      <p className="text-[9px] md:text-base flex items-center gap-1 md:gap-3">
                         <HiOutlineCircleStack /> {repo.size} KB
                       </p>
-                      <p className="text-[11px] lg:text-base my-0">Updated {getInDays(repo.updated_at)} days ago</p>
+                      <p className="text-[10px] md:text-base my-0">Updated {getInDays(repo.updated_at)} days ago</p>
                     </div>
                   </Link>
                 </li>

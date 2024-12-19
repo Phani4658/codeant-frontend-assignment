@@ -16,7 +16,7 @@ export default function AuthPlaceholder() {
     },
   ];
   return (
-    <div className="bg-white h-screen w-[50vw] lg:flex items-center justify-center relative hidden">
+    <div className="bg-white h-screen w-[50vw] md:flex items-center justify-center relative hidden">
       <img src="/authPlaceholder.svg" className="absolute bottom-0 left-0 min-w-[140px]" />
       <div className="relative min-w-[50%] px-5">
         <section className="shadow py-2 rounded-[24px]">

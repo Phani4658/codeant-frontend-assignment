@@ -9,7 +9,7 @@ export default function NotFound() {
       <h1 className="text-2xl sm:text-3xl font-extrabold">
         The Page is Under Development
       </h1>
-      <p className="text-base lg:text-xl font-bold">
+      <p className="text-base md:text-xl font-bold">
         We are working on it and will be back soon.
       </p>
       <button

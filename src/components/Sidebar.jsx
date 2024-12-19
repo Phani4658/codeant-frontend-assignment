@@ -78,7 +78,7 @@ export default function SidebarLayout({ children, onUsernameChange }) {
       <div className="w-full p-4 top-0 left-0 z-50 flex justify-between items-center md:hidden">
         <span className="flex items-center gap-3">
           <img src="/logo.svg" />
-          <h2 className="company-name text-xl lg:text-2xl">CodeAnt AI</h2>
+          <h2 className="company-name text-xl md:text-2xl">CodeAnt AI</h2>
         </span>
         <FaBars className="text-2xl cursor-pointer" onClick={toggleSidebar} />
       </div>
@@ -120,7 +120,7 @@ export default function SidebarLayout({ children, onUsernameChange }) {
         <div>
           <div className="flex items-center gap-3 mx-auto p-4">
             <img src="/logo.svg" />
-            <h2 className="company-name text-xl lg:text-2xl">CodeAnt AI</h2>
+            <h2 className="company-name text-xl md:text-2xl">CodeAnt AI</h2>
           </div>
           <div className="py-2 px-4">
             <select

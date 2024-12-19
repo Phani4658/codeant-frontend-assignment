@@ -36,7 +36,7 @@ export default function AuthTabs() {
 
   const displayButton = (button, index) => (
     <button
-      className="border border-[#D8DAE5] p-3 rounded-md flex gap-4 w-[98%]  lg:w-[80%] justify-center hover:bg-[#E9EAEB] max-w-[446px]"
+      className="border border-[#D8DAE5] p-3 rounded-md flex gap-4 w-[98%]  md:w-[80%] justify-center hover:bg-[#E9EAEB] max-w-[446px] md:text-sm lg:text-lg"
       onClick={() => navigate('/')}
       key={index}
     >
@@ -46,7 +46,7 @@ export default function AuthTabs() {
   );
   return (
     <Tabs defaultValue="SAAS">
-      <TabsList className="bg-[#FAFAFA] flex border mb-8 rounded-lg mx-3 lg:mx-auto max-w-[624px]">
+      <TabsList className="bg-[#FAFAFA] flex border mb-8 rounded-lg mx-3 md:mx-auto md:w-[95%] max-w-[624px]">
         <TabsTrigger
           className="flex-1 p-3 active:bg-[#1570EF] tabs"
           value="SAAS"
