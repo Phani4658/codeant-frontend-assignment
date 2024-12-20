@@ -72,12 +72,6 @@ Access the live demo at https://codeant-frontend-assignment.vercel.app/login
 
 - Node.js and npm installed on your system.
 
-## How to Run
-
-### Prerequisites
-
-- Node.js and npm installed on your system.
-
 ### Steps
 
 1. Clone the repository:
